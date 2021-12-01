@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavBar from './NavBar'
+import { Route, Switch } from 'react-router-dom'
+import Home from './Home'
+import Precautions from './Precautions'
+import IndiaStatus from './component/IndiaStatus';
+import Login from './component/Login'
+import Signup from './component/Signup'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <>
+        <NavBar></NavBar>
+        <Switch>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/india-status" component={IndiaStatus}></Route>
+            <Route exact path="/precautions" component={Precautions}></Route>
+            <Route exact path="/login" component={Login}></Route>
+            <Route exact path="/signup" component={Signup}></Route>
+        </Switch>
+        </>
+    )
 }
-
-export default App;

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Playfair+Display&display=swap');
+
+.main_div {
+    background-image: linear-gradient(to right, #000000, #434343);
+    width: 100%;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.width {
+    min-height: 50vh;
+}
+
+.input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#filled-basic {
+    background: white;
+    min-width: 300px;
+    max-width: 310px;
+}
+
+svg.MuiSvgIcon-root {
+    font-size: 50px;
+    color: white;
+}
+
+#find_state {
+    border: 2px solid yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 300px;
+    min-height: 300px;
+    border-bottom: 10px solid yellow;
+    box-shadow: 9px 4px 7px yellow;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#find_state p {
+    color: yellow;
+}
+
+#sat_name {
+    color: yellow;
+    font-family: 'Goblin One', cursive;
+    font-size: 25px;
+}
+
+.data_of_states {
+    margin-top: 70px;
+}
+
+.data_of_states ol {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.each_state {
+    margin: 19px;
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #304352, #d7d2cc);
+    color: black;
+}
+
+.state_name {
+    font-family: 'Goblin One', cursive;
+    text-shadow: 1px 1px 1px white;
+} 
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.search_btn {
+    background: transparent;
+    outline: none;
+    border: none;
+}
